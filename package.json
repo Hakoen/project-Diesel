@@ -1,0 +1,18 @@
+{
+  "name": "project-diesel",
+  "version": "1.0.0",
+  "description": "Een NodeJS API om vanuit bed, lokaal, in de woonkamer tegen de hond te schreeuwen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordy Leffers",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "play-sound": "^1.1.2"
+  }
+}
