@@ -18,7 +18,7 @@ function playAudio(pass, filename) {
         if (res)
         {
             player.play(filename, (err) => {
-                console.log('played test sound');
+                console.log('Played test sound');
                 if(err) console.log(`Could not play sound: ${err}`);
             });
         }
@@ -30,7 +30,7 @@ function playAudio(pass, filename) {
 } 
 
 
-app.post('/test', function(req, res){
+app.post('/play', function(req, res){
     playAudio(req.body.pass, 'test.mp3');
     res.sendFile(path.join(__dirname + '/index.html'));
 });
